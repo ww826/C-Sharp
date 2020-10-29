@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AStar
+namespace Algorithms.Search.AStar
 {
     /// <summary>
     /// Generic Priority Queue.

@@ -1,4 +1,4 @@
-﻿namespace AStar
+﻿namespace Algorithms.Search.AStar
 {
     /// <summary>
     /// The states the nodes can have.

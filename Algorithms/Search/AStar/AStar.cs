@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using Algorithms.Search.AStar;
 
-namespace AStar
+namespace Algorithms.Search.AStar
 {
     /// <summary>
     /// Contains the code for A* Pathfinding.
@@ -31,7 +30,7 @@ namespace AStar
         public static List<Node> GeneratePath(Node target)
         {
             var ret = new List<Node>();
-            Node? current = target;
+            var current = target;
             while (!(current is null))
             {
                 ret.Add(current);

@@ -156,7 +156,7 @@ namespace DataStructures.DoublyLinkedList
         /// </summary>
         public void Reverse()
         {
-            DoublyLinkedListNode<T>? current = Head;
+            var current = Head;
             DoublyLinkedListNode<T>? temp = null;
 
             while (current != null)

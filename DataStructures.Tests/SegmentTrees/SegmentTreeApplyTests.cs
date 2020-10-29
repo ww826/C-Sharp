@@ -1,4 +1,3 @@
-using System;
 using DataStructures.SegmentTrees;
 using NUnit.Framework;
 

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DataStructures;
 using NUnit.Framework;
 
 namespace DataStructures.Tests
@@ -42,8 +41,8 @@ namespace DataStructures.Tests
             {
                 mmh.Add(item);
             }
-            T minValue = mmh.GetMin();
-            T maxValue = mmh.GetMax();
+            var minValue = mmh.GetMin();
+            var maxValue = mmh.GetMax();
 
             Assert.AreEqual(collection.Min(), minValue);
             Assert.AreEqual(collection.Max(), maxValue);
@@ -58,8 +57,8 @@ namespace DataStructures.Tests
             var mmh = new MinMaxHeap<T>(collection);
             var emptyHeap = new MinMaxHeap<T>();
 
-            T first = mmh.ExtractMax();
-            T second = mmh.GetMax();
+            var first = mmh.ExtractMax();
+            var second = mmh.GetMax();
 
             Assert.Throws<InvalidOperationException>(() => emptyHeap.ExtractMax());
             Assert.AreEqual(ordered.ElementAt(0), first);
@@ -75,8 +74,8 @@ namespace DataStructures.Tests
             var mmh = new MinMaxHeap<T>(collection);
             var emptyHeap = new MinMaxHeap<T>();
 
-            T first = mmh.ExtractMin();
-            T second = mmh.GetMin();
+            var first = mmh.ExtractMin();
+            var second = mmh.GetMin();
 
             Assert.Throws<InvalidOperationException>(() => emptyHeap.ExtractMin());
             Assert.AreEqual(ordered.ElementAt(0), first);
@@ -92,7 +91,7 @@ namespace DataStructures.Tests
             var emptyHeap = new MinMaxHeap<int>();
             var mmh = new MinMaxHeap<T>(collection);
 
-            T maxValue = mmh.GetMax();
+            var maxValue = mmh.GetMax();
 
             Assert.Throws<InvalidOperationException>(() => emptyHeap.GetMax());
             Assert.AreEqual(collection.Max(), maxValue);
@@ -105,7 +104,7 @@ namespace DataStructures.Tests
             var emptyHeap = new MinMaxHeap<int>();
             var mmh = new MinMaxHeap<T>(collection);
 
-            T minValue = mmh.GetMin();
+            var minValue = mmh.GetMin();
 
             Assert.Throws<InvalidOperationException>(() => emptyHeap.GetMin());
             Assert.AreEqual(collection.Min(), minValue);
@@ -146,7 +145,7 @@ namespace DataStructures.Tests
 
             while (mmh.Count > 0)
             {
-                T value = ascending ? mmh.ExtractMin() : mmh.ExtractMax();
+                var value = ascending ? mmh.ExtractMin() : mmh.ExtractMax();
                 extracted.Add(value);
             }
 

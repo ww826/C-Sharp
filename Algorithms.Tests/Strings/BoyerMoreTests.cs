@@ -1,7 +1,5 @@
 using Algorithms.Search.Substring;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
 
 namespace Algorithms.Tests.Search.Substring
 {

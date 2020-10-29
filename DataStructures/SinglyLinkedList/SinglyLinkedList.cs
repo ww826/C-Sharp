@@ -121,7 +121,7 @@ namespace DataStructures.SinglyLinkedList
         public IEnumerable<T> GetListData()
         {
             // temp ListElement to avoid overwriting the original
-            SinglyLinkedListNode<T>? tempElement = Head;
+            var tempElement = Head;
 
             // all elements where a next attribute exists
             while (tempElement != null)

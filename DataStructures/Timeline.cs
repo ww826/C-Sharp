@@ -118,7 +118,7 @@ namespace DataStructures
             var rightArray = right.ToArray();
             if (leftArray.Length == rightArray.Length)
             {
-                for (int i = 0; i < leftArray.Length; i++)
+                for (var i = 0; i < leftArray.Length; i++)
                 {
                     if (leftArray[i].Time != rightArray[i].Time && !leftArray[i].Value!.Equals(rightArray[i].Value))
                     {

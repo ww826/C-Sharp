@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AStar
+namespace Algorithms.Search.AStar
 {
     /// <summary>
     /// A Node(former Location)
